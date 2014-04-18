@@ -93,3 +93,23 @@ input::-webkit-input-placeholder {
 #demo-b input::-webkit-input-placeholder {
 	color: transparent;
 }
+
+.login_background_image{
+
+background-image:url('11.jpg');
+background-color:#000000;
+background-repeat:no-repeat;
+#background-attachment:fixed;
+background-position:center;
+
+}
+
+.login_box_label1{
+float:left;
+margin-right:45px;
+}
+
+.login_box_label2{
+float:left;
+margin-right:20px;
+}

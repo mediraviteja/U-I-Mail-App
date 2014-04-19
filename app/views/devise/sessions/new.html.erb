@@ -1,9 +1,9 @@
-<h2><center>U&I Mail App</center></h2>  
+<h2><center>Mail App</center></h2>  
 <hr>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div><%= f.label :email, :class=>"login_box_label1" %>
-  <%= f.email_field :email, autofocus: true %></div>
+  <div><%= f.label :email , :class=>"login_box_label1" %>
+  <%= f.email_field :email, :id=>"username", autofocus: true %></div>
  
   <div><%= f.label :password,:class=>"login_box_label2" %>
     <%= f.password_field :password, autocomplete: "off" %></div>

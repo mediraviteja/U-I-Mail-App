@@ -15,7 +15,8 @@ gem 'devise'
 
  
 group :development, :test do
-  gem 'mysql2' 
+  gem 'mysql2'
+  
 end
 
 group :production do

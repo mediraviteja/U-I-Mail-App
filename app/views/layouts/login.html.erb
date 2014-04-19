@@ -36,9 +36,10 @@
 
     <%= javascript_include_tag "application" %>
   </head>
-  <body class="login_background_image">
+  <body  class="login_background_image">
 
-    <div class="navbar navbar-fluid-top navbar-inverse">
+    <!-- 
+ <div class="navbar navbar-fluid-top navbar-inverse">
 	<div class="navbar-inner" style="border-radius: 0;">
         <div class="container-fluid">
           <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
@@ -70,18 +71,55 @@
             </ul>
 	   
 
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>
- 
+      --> 
     <div class="container-fluid">
       <div class="row-fluid">
 	
-        <div class="well span5" style="margin: 7% auto;float: none; background-color: #FFFFFF;border: solid 1px #A3A3A3;"> 
-	 
-          <%= bootstrap_flash %>
-          <%= yield %>
+        <div class="well span10" style="margin: 9% auto;float: none; background-color: #FFFFFF;border: solid 1px #A3A3A3; "> 
+	        <div class="row-fluid">
+              <div class="span6" style="border-right:1px solid #cccccc;padding-right:15px;">
+                <%= bootstrap_flash %>
+          	  <%= yield %>
+              </div>  
+              <div class="span6" > 
+               	
+                <div class="col-md-4">
+                                <div class="testimonial">
+                                  <!--<p><i>Freecharge has completely revamped my online recharging experience. It's fast, smooth and the customer support is excellent. Great going!</i></p>-->
+                                    <div>
+                                      <img src="https://d1vq4cm585jne1.cloudfront.net/content/images/singlepage/homepage/testimonial-pic.png" alt="Manoj MJ, @manoj_g33k via twitter" style="float:left;margin-right:10px;margin-left: 28px;">
+                                        <p class="name-title"><strong>Your Name Goes Here</strong></p>
+                                      <p class="company"><u>Youremail@gmail.com</u></p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                  <br><br>  
+                  <div class="modalbody_divider"> <span class="name-title">Welcome</span></div>
+                  <br>
+                            <div class="col-md-4">
+                                <div class="testimonial">
+                                    <p><i>   
+                                      Hi, <u>U-I  Mail App</u> is completely a great tool where no company servers or Proxy servers can block you sending Emails, Message nor to connect Socail Network!! It's fast, smooth and the excellent. Great going!
+                                      </i></p> 
+                                    <div>
+                                      <img src="https://d1vq4cm585jne1.cloudfront.net/content/images/singlepage/homepage/testimonial-pic.png" alt="Manoj MJ, @manoj_g33k via twitter" style="float:left;margin-right:10px;margin-top:10px;">
+                                      <p class="name-title1" ><strong>Designed By,</strong></p>
+                                      <p class="name-title"><strong>Ravi Teja Medi !!</strong></p>
+                                      <p class="company"><u>mediraviteja@gmail.com</u></p>
+                                    </div>
+                                </div>
+                            </div>
+                  </div>
+                
+              
+              
+            </div>
+	     
         </div>
       </div><!--/row-->
 

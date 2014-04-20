@@ -36,7 +36,7 @@
 
     <%= javascript_include_tag "application" %>
   </head>
-  <body  class="login_background_image">
+  <body  class="login_background_image.">
 
     <!-- 
  <div class="navbar navbar-fluid-top navbar-inverse">
@@ -86,18 +86,24 @@
           	  <%= yield %>
               </div>  
               <div class="span6" > 
-               	  
-                <div align="center" class="col-md-4">  
-                  Dont Have Account Yet?,&nbsp;&nbsp;<%= link_to "Sign up", new_registration_path(resource_name), :class=>"btn btn-small btn-success",:style=>"width: 69px; height: 25px; margin-bottom: 10px;color: #FFFFFF;font-size: 16px;" %>
-                       
-                  <div class="testimonial" style="display: none;">
+               	   <div class="testimonial" style="display:none;" >
                                   <!--<p><i>Freecharge has completely revamped my online recharging experience. It's fast, smooth and the customer support is excellent. Great going!</i></p>-->
                                     <div>
                                       <img src="https://d1vq4cm585jne1.cloudfront.net/content/images/singlepage/homepage/testimonial-pic.png" alt="Manoj MJ, @manoj_g33k via twitter" style="float:left;margin-right:10px;margin-left: 28px;">
-                                      <p class="name-title"><strong><input type="text" id="getusername" style="border: none;-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);background-color: transparent;color: black;font-family: 'Ruluko', sans-serif;font-size: 17px;" disabled="disabled"/></strong></p>
-                                      <p class="company"><u>Youremail@gmail.com</u></p>
+                                      <p class="name-title"><strong><input type="text" id="getusername" style="border: none;-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);background-color: transparent;color: black;font-family: 'Ruluko', sans-serif;font-size: 17px;" disabled="disabled"/>
+<i class="icon-large icon-ok"></i>
+<hr>
+</strong></p>
+
                                     </div>
                                 </div>
+
+                <div align="center" class="col-md-4">  
+                  Dont Have Account Yet?,&nbsp;&nbsp;
+
+		<%= link_to "Register", new_registration_path(resource_name), :class=>"btn btn-small btn-success",:style=>"width: 69px; height: 25px; margin-bottom: 10px;color: #FFFFFF;font-size: 16px;" %>
+
+                 
                             </div>
                  
                   <br> 
@@ -106,10 +112,10 @@
                             <div class="col-md-4">
                                 <div class="testimonial">
                                     <p><i>    
-                                      Hi, <u>U-I  Mail App</u> is completely a great tool where no company servers or Proxy servers can block you sending Emails, Message nor to connect Socail Network!! It's fast, smooth and excellent.<br> Great going!
+                                      Hi, This <font color="red">Mail App</font> is completely a great tool where no company servers nor Proxy servers can block you sending Emails, Message nor Socail Network to connect you!!<br>It's fast, smooth and excellent.<br> Great going!
                                       </i></p> 
                                     <div>
-                                      <img src="https://d1vq4cm585jne1.cloudfront.net/content/images/singlepage/homepage/testimonial-pic.png" alt="Manoj MJ, @manoj_g33k via twitter" style="float:left;margin-right:10px;margin-top:10px;">
+                                      <img src="/assets/ravi.png" alt="Manoj MJ, @manoj_g33k via twitter" style="float:left;margin-right:10px;width: 64px;">
                                       <p class="name-title1" ><strong>Designed By,</strong></p>
                                       <p class="name-title"><strong>Ravi Teja Medi !!</strong></p>
                                       <p class="company"><u>mediraviteja@gmail.com</u></p>

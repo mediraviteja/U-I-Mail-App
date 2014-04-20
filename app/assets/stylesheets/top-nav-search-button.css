@@ -2,7 +2,7 @@
 
 
 body {
-	background: #fff;
+	background: #000000;
 	color: #666;
     font-family: 'Ruluko', sans-serif;
 	font: 85%/140% Arial, Helvetica, sans-serif;
@@ -100,13 +100,14 @@ input::-webkit-input-placeholder {
 
 .login_background_image{
 
-background-image:url('11.jpg');
-background-color:#000000;
+background-image:url('11s.jpg');
+background-color:#FFFFFF;
 background-repeat:no-repeat;
 #background-attachment:fixed;
 background-position:center;
 
 }
+
 
 .login_box_label1{
 float:left;
@@ -117,6 +118,28 @@ margin-right:45px;
 float:left;
 margin-right:20px;
 }
+
+.login_box2_label{
+float:left;
+margin-right:70px;
+}
+
+.login_box2_label_email{
+float:left;
+margin-right:105px;
+}
+
+.login_box2_label1{
+float:left;
+margin-right:45px;
+}
+
+.login_box2_label2{
+float:left;
+margin-right:75px;
+}
+
+
 .testimonial {}
 .testimonial > p {
   position: relative;

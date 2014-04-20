@@ -92,8 +92,8 @@
           </div><!--/.well -->
         </div><!--/span--> 
 	<%end%>
-        <div class="well span9">
-		<h1>application</h1>
+        <div class="well span9" style="">
+ 
           <%= bootstrap_flash %>
           <%= yield %>
         </div>

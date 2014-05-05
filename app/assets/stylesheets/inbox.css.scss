@@ -1,0 +1,40 @@
+// Place all the styles related to the Inbox controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+table tbody tr{
+	color: #F8EFEF;
+background: rgba(35,35,35,.9);
+}
+
+.unread_div{
+	cursor:pointer;
+	float:left;
+}
+ 
+.unread_down {
+	width: 20px;
+   content:url("/assets/arrow_down.png");
+}
+
+.unread_up {
+	width: 20px;
+   content:url("/assets/arrow_up.png");
+}
+
+.clear{
+	clear:both;
+}
+
+.custom_hr{
+	margin:8px;
+	border: 0;
+	border-top: 1px solid #A5A1A1;
+	width: 100%;
+}
+
+.show_more_messages{
+	cursor:pointer;
+}
+

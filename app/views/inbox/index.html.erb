@@ -1,0 +1,60 @@
+
+ 
+<div class="unread_div">
+	
+		<img class="unread_down"> 
+	unread
+</div> 
+
+<div class="show_more_messages pull-right">
+	<div> 1-24 Of 24</div>
+</div>
+ <div class="clear"></div>
+ <hr class="custom_hr">
+
+
+<div class="inbox index">
+ 	<table class="table ">
+		<thead>
+			<tr>
+				<th >Name</th>
+				<th>From</th>
+				<th>To</th>
+				 
+			</tr>
+		</thead>
+		<tbody>
+		<% @inbox.each do |i| %>
+			 <tr> 
+				<td style="width:150px;"><%= i.name%></td>
+				<td><%= i.from%></td>
+				<td><%= i.subject%></td>				 
+			</tr>
+		<%end%>
+		</tbody>
+	</table>
+</div>  
+
+<script>
+	 $(".unread_div").click(function() {
+
+     	var a =$( ".unread_div img" ).hasClass( "unread_down" ) ;
+	 	 
+	 		if (a) { 
+	 			 
+	 			  $('.unread_div img').removeClass('unread_down');
+	 			  $( ".unread_div img" ).addClass( "unread_up" );
+	 		}
+	 		else{
+	 		 
+	 			 $('.unread_div img').addClass('unread_down');
+	 			  $( ".unread_div img" ).removeClass( "unread_up" )
+
+	 		}
+ 
+		 $( ".inbox" ).toggle();
+ 
+
+	});
+   
+</script>

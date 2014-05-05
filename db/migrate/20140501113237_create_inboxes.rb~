@@ -1,0 +1,11 @@
+class CreateInboxes < ActiveRecord::Migration
+  def up
+    create_table :inboxes do |t|
+      t.
+      t.timestamps
+    end
+
+  def down
+    drop_table :inboxes
+  end
+end

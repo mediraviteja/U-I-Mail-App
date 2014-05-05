@@ -12,7 +12,7 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 
 gem 'devise'
-
+gem 'bcrypt-ruby', :require => 'bcrypt' 
  
 group :development, :test do
   gem 'mysql2'

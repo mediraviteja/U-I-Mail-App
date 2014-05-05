@@ -23,7 +23,7 @@ test:
   database: imail_development
   pool: 5
   username: root
-  password: 
+  password: root123
   socket: /var/run/mysqld/mysqld.sock
 
 production:

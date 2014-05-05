@@ -85,14 +85,21 @@
               <li class="nav-header"><h4>U&I Links</h4></li>
               <li ><%= link_to "Compose", "/path1", :class => 'btn btn-info' %></li>
 		<hr>
-              <li><%= link_to "Inbox", "/path3", :class => 'btn '  %></li>
+              <li><%= link_to "Inbox", "/path3", :class => 'btn'  %></li>
+		
               <li><%= link_to "Sent Mail", "/path3", :class => 'btn '   %></li>
+		
               <li><%= link_to "Drafts Mail", "/path3" , :class => 'btn '  %></li>
+		
+	      <li><%= link_to "list Of Users", "/path3" , :class => 'btn '  %></li>
+		
+
+
             </ul>
           </div><!--/.well -->
         </div><!--/span--> 
 	<%end%>
-        <div class="well span9" style="">
+        <div class="well span9" style="min-height:500px;">
  
           <%= bootstrap_flash %>
           <%= yield %>

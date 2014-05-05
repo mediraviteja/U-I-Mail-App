@@ -1,11 +1,31 @@
 Karthik::Application.routes.draw do
 
+ 
+  get "sentmail/index"
+  get "sentmail/show"
+  get "sentmail/edit"
+  get "sentmail/destroy"
+  get "compose/index"
+  get "compose/show"
+  get "compose/edit"
+  get "compose/destroy"
+ 
+
+
 devise_for :users do
     get '/users/sign_out' => 'devise/sessions#destroy'
 end
 
   resources :projects
-   root 'projects#index'
+  
+   resources :inbox
+      root 'inbox#index'
+   resources :compose
+   resources :sentmail
+   resources :drafts
+
+   
+   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -35,7 +35,12 @@
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
-    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application","inbox_script" %>
+    
+
+
+
+
   </head>
   <body class="login_background_image">
 
@@ -83,11 +88,19 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><h4>U&I Links</h4></li>
-              <li ><%= link_to "Compose", "/path1", :class => 'btn btn-info' %></li>
+
+              <li><%= link_to "compose", {:controller => 'compose', :action => 'index'} , :class => "btn btn-info"  %></li>
 		<hr>
-              <li><%= link_to "Inbox", "/path3", :class => 'btn '  %></li>
-              <li><%= link_to "Sent Mail", "/path3", :class => 'btn '   %></li>
-              <li><%= link_to "Drafts Mail", "/path3" , :class => 'btn '  %></li>
+              <li><%= link_to "Inbox", {:controller => 'inbox', :action => 'index'} , :class => "btn"  %></li>
+		
+              <li><%= link_to "Sent Mail", {:controller => 'sentmail', :action => 'index'}, :class => 'btn '   %></li>
+		
+              <li><%= link_to "Drafts Mail", {:controller => 'drafts', :action => 'index'} , :class => 'btn '  %></li>
+		
+	      <li><%= link_to "list Of Users", "/path3" , :class => 'btn '  %></li>
+		
+
+
             </ul>
           </div><!--/.well -->
         </div><!--/span--> 

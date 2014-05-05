@@ -100,7 +100,8 @@ input::-webkit-input-placeholder {
 
 .login_background_image{
 
-background-image:url('11s.jpg');
+background-image:url('12.jpg');
+ 
 background-color:#FFFFFF;
 background-repeat:no-repeat;
 #background-attachment:fixed;
@@ -199,3 +200,5 @@ left: 46%;
 text-transform: uppercase;
 padding: 15px;
 }
+
+

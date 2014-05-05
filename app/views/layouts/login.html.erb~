@@ -35,6 +35,10 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
     <%= javascript_include_tag "application" %>
+
+
+ 
+
   </head>
   <body  class="login_background_image.">
 
@@ -115,7 +119,7 @@
                                       Hi, This <font color="red">Mail App</font> is completely a great tool where no company servers nor Proxy servers can block you sending Emails, Message nor Socail Network to connect you!!<br>It's fast, smooth and excellent.<br> Great going!
                                       </i></p> 
                                     <div>
-                                      <img src="/assets/ravi.png" alt="Manoj MJ, @manoj_g33k via twitter" style="float:left;margin-right:10px;margin-top:15px;">
+                                      <img src="/assets/ravi.png" alt="Manoj MJ, @manoj_g33k via twitter" style="float:left;margin-right:10px;width: 64px;">
                                       <p class="name-title1" ><strong>Designed By,</strong></p>
                                       <p class="name-title"><strong>Ravi Teja Medi !!</strong></p>
                                       <p class="company"><u>mediraviteja@gmail.com</u></p>

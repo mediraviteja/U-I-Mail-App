@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140420175825) do
+ActiveRecord::Schema.define(version: 20140501113237) do
+
+  create_table "inboxes", force: true do |t|
+    t.string   "name"
+    t.string   "from"
+    t.string   "to"
+    t.string   "subject"
+    t.string   "body"
+    t.binary   "status_code"
+    t.boolean  "read",        default: false
+    t.boolean  "star",        default: false
+    t.boolean  "important",   default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "projects", force: true do |t|
     t.string   "First"

@@ -71,4 +71,8 @@ class ProjectsController < ApplicationController
     def project_params
       params.require(:project).permit(:First, :name, :Last, :name)
     end
+
+   def inbox
+      
+   end
 end

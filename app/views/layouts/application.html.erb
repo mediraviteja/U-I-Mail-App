@@ -36,11 +36,7 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
     <%= javascript_include_tag "application","inbox_script" %>
-    
-
-
-
-
+     
   </head>
   <body class="login_background_image">
 
@@ -97,7 +93,7 @@
 		
               <li><%= link_to "Drafts Mail", {:controller => 'drafts', :action => 'index'} , :class => 'btn '  %></li>
 		
-	      <li><%= link_to "list Of Users", "/path3" , :class => 'btn '  %></li>
+	      <li><%= link_to "list Of Users", {:controller => 'users', :action => 'index'} , :class => 'btn '  %></li>
 		
 
 

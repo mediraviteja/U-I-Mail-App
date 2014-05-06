@@ -1,12 +1,12 @@
 class InboxController < ApplicationController
 
-
+ 
  def index
  	@inbox=Inbox.all
  end
  
  def show
- 	@user=User.all
+ 	
  end
 
  def new
@@ -25,6 +25,7 @@ class InboxController < ApplicationController
 
  def destroy
  end
+ 
 
 
 end

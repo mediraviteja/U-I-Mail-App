@@ -1,6 +1,13 @@
 Karthik::Application.routes.draw do
 
  
+  get "users/index"
+  get "users/show"
+  get "users/edit"
+  get "users/new"
+  get "users/create"
+  get "users/update"
+  get "users/destroy"
   get "sentmail/index"
   get "sentmail/show"
   get "sentmail/edit"
@@ -12,6 +19,7 @@ Karthik::Application.routes.draw do
  
 
 
+
 devise_for :users do
     get '/users/sign_out' => 'devise/sessions#destroy'
 end
@@ -20,6 +28,14 @@ end
   
    resources :inbox
       root 'inbox#index'
+
+       resources :inbox do
+       
+         get 'users'
+         
+       end
+
+
    resources :compose
    resources :sentmail
    resources :drafts

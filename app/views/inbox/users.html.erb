@@ -1,0 +1,26 @@
+<h1>List Of Users</h1>
+  
+<div class="LIst Users index">
+ 	<table class="table ">
+		<thead>
+			<tr>
+				<th >Name</th>
+				<th>email</th>
+				<th>User Name</th>
+				<th>Phone Number</th>
+				 
+			</tr>
+		</thead>
+		<tbody>
+		<% @user.each do |i| %>
+			 <tr> 
+				<td style="width:150px;"><%= i.name%></td>
+				<td><%= i.email%></td>
+				<td><%= i.user_name%></td>				 
+				<td><%= i.phone_number%></td>	
+			</tr>
+		<%end%>
+		</tbody>
+	</table>
+</div>  
+ 
